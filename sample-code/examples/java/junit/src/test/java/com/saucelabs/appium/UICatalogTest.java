@@ -58,7 +58,7 @@ public class UICatalogTest {
         File appDir = new File(classpathRoot, "../../../apps/UICatalog/build/release-iphonesimulator");
         File app = new File(appDir, "UICatalog.app");
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("platformVersion", "8.1");
+        capabilities.setCapability("platformVersion", "9.1");
         capabilities.setCapability("deviceName", "iPhone 6");
         capabilities.setCapability("app", app.getAbsolutePath());
         driver = new IOSDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
