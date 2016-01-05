@@ -45,7 +45,7 @@ public class iOSPageObjectTest {
         File app = new File(appDir, "TestApp.app");
 	    DesiredCapabilities capabilities = new DesiredCapabilities();
 	    capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "");
-	    capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.1");
+	    capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9.1");
 	    capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone Simulator");
 	    capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
 	    

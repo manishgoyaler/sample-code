@@ -27,7 +27,9 @@ public class AndroidPageObjectTest_Simple {
 	
 	@Before
 	public void setUp() throws Exception {
-	    File appDir = new File("src/test/java/io/appium/java_client");
+		File classpathRoot = new File(System.getProperty("user.dir"));
+		File appDir = new File(classpathRoot, "../../../apps/ApiDemos/bin");
+	    //File appDir = new File("src/test/java/io/appium/java_client");
 	    File app = new File(appDir, "ApiDemos-debug.apk");
 	    DesiredCapabilities capabilities = new DesiredCapabilities();
 	    capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
